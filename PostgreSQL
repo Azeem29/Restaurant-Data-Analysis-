@@ -1,0 +1,67 @@
+# Restaurant Data Analysis using PostgreSQL 🍽️📊
+
+## Overview
+This project focuses on analyzing restaurant data using **PostgreSQL** to uncover business insights related to sales performance, customer behavior, and menu popularity.  
+The analysis helps restaurant owners and managers make **data-driven decisions** to improve revenue and operational efficiency.
+
+## Problem Statement
+Restaurants generate large amounts of transactional data, but without proper analysis it is difficult to:
+- Identify top-selling menu items
+- Understand peak business hours
+- Analyze customer ordering patterns
+- Track overall revenue performance
+
+This project solves these problems using **SQL queries in PostgreSQL**.
+
+## Objectives
+- Analyze restaurant sales and order data
+- Identify best and worst performing menu items
+- Understand peak order timings
+- Generate insights for business optimization
+
+## Database & Tools
+- **Database:** PostgreSQL  
+- **Language:** SQL  
+- **Tool Used:** pgAdmin / psql  
+- **Environment:** Relational Database System (RDBMS)
+
+## Database Schema
+The database consists of the following tables:
+
+### 1. customers
+| Column | Description |
+|------|-------------|
+| customer_id | Unique customer ID |
+| customer_name | Name of the customer |
+
+### 2. menu
+| Column | Description |
+|------|-------------|
+| item_id | Unique menu item ID |
+| item_name | Name of the dish |
+| price | Price of the item |
+
+### 3. orders
+| Column | Description |
+|------|-------------|
+| order_id | Unique order ID |
+| customer_id | Customer placing the order |
+| order_date | Date of order |
+
+### 4. order_details
+| Column | Description |
+|------|-------------|
+| order_id | Order reference |
+| item_id | Menu item ordered |
+| quantity | Quantity ordered |
+
+## Data Analysis Performed
+The following analyses were performed using SQL queries:
+
+- Total revenue generated
+- Top-selling and least-selling menu items
+- Number of orders per customer
+- Daily and monthly sales trends
+- Average order value
+- Peak ordering hours and days
+
